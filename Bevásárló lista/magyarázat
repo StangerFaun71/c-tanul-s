@@ -1,0 +1,11 @@
+Ez a C# program egy interaktív konzolos alkalmazás, amely lehetővé teszi a felhasználónak, hogy egyszerűen kezelje és rögzítse a vásárlási listáját. Három fő részre osztható a kód: az adatbevitel és listakezelés, a szöveges fájlba történő mentés, valamint a felhasználóval való kommunikáció.
+
+A program kezdetén inicializál egy számláló változót (db), ami nyomon követi, hány elemet vettünk fel a bevásárlólistába. Emellett létrehoz egy List<string> típusú változót (beLista), amely tárolja a felhasználó által beírt vásárolandó dolgokat.
+
+Ezután egy végtelen while ciklus indul el, amelyben a felhasználótól kér inputot egy Console.ReadLine() során. Minden beírt elemet hozzáad a listához, és a számlálót növeli. Ha a felhasználó üres sort üt be, a ciklus megszakad, de megelőzően csökkenti a számlálót egyel.
+
+Ezt követően a program kiírja a gyűjtött elemeket a konzolra egy foreach ciklus segítségével, majd bemutatja, hány elemet rögzítettünk összesen.
+
+Ezután a program egy előre meghatározott elérési útvonalra menti el a bevásárlólistát egy szöveges fájlba a SaveToTxtFile függvény segítségével. Ez a függvény egy StreamWriter objektumot használ, amely lehetővé teszi a szöveges fájlba történő írást. A fájl tartalma az előzőleg rögzített elemek listája, formázottan és egyértelműen olvasható módon.
+
+Végül a program értesíti a felhasználót arról, hogy a lista el lett mentve a fájlba, majd várakoztatja, hogy a felhasználó láthassa a kimenetet, mielőtt manuálisan leállítaná a programot. Ez a várakoztatás lehetővé teszi, hogy a felhasználó a konzol ablakot szemrevételezze és szükség esetén időt hagyjon a befejezés előtt.
