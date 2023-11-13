@@ -1,0 +1,11 @@
+Ez a C# program egy egyszerű számjátékot valósít meg, ahol a felhasználó próbálja kitalálni a számítógép által generált véletlenszerű számot. Hadd részletezzem a kódot lépésről lépésre:
+
+A program elindul a Main függvényből, amely a belépési pontja az alkalmazásnak. A program egy végtelen do-while ciklusban fut, amely lehetővé teszi a játék ismételt futtatását a felhasználó kívánságáig.
+
+Minden játékkezdésnél a program generál egy véletlenszerű számot 0 és 100 között a Random osztály segítségével. A felhasználótól bekér egy tippet, majd egy belső do-while ciklusban addig kéri a tippet, amíg a felhasználó el nem találja a számot. A program minden tippelés után visszajelzést ad a felhasználónak, hogy a gondolt szám nagyobb vagy kisebb, és növeli a tippelések számát.
+
+Amikor a felhasználó eltalálja a számot, a program gratulál, kiírja a kitalált számot, és megjeleníti, hány tippelésből sikerült eltalálnia.
+
+Ezután a program megkérdezi a felhasználót, hogy szeretne-e új játékot játszani. A választ egy karakter beolvasásával (Console.ReadKey().KeyChar) olvassa be. Ha a válasz 'n', akkor a program üzenettel búcsúzik és kilép a ciklusból. Ha a válasz 'y', akkor a játék újraindul, és a folyamat kezdődik elölről. Ha a válasz nem 'y' vagy 'n', akkor az alkalmazás hibaüzenetet ír ki.
+
+A program folyamatosan fut, biztosítva, hogy a felhasználó bármikor eldönthesse, hogy szeretne-e további játékot játszani vagy sem. Az alkalmazás végén a felhasználótól vár egy kézi befejezést, hogy szemrevételezhesse az eredményeket, mielőtt leállítja a programot.
