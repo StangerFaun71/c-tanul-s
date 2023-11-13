@@ -34,7 +34,7 @@ class Program
         }
         Console.WriteLine($"Ennyi elem van a listádon {db}");
         Console.ReadLine();
-        string eleresiUt = @"C:\Users\Bazsi\Documents\bevásárló lista.txt";
+        string eleresiUt = @"C:\Users\"felhasználónév"\Documents\bevásárló lista.txt";
 
         SaveToTxtFile(beLista, eleresiUt);
 
