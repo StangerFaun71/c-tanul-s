@@ -1,0 +1,15 @@
+Ez a C# nyelven írt program egy egyszerű számológépet implementál, amely lehetővé teszi a felhasználó számológépes műveletek végrehajtását a konzol ablakban. Hadd részletezzem a kódot lépésről lépésre, hogy megértsd a működését.
+
+Az alkalmazás a `Main` függvényből indul, ahol először kiírja a konzolra a "Számológép" üzenetet, majd belép egy végtelen `while` ciklusba. Ennek a ciklusnak a célja, hogy lehetőséget biztosítson a folyamatos számítási műveletekre, anélkül, hogy újraindítaná az alkalmazást.
+
+A ciklus kezdetén két változó, `szam1` és `szam2`, inicializálódik nullára, ezek fogják tárolni a műveletek operandusait. Ezután a program kéri a felhasználót, hogy válasszon ki egy matematikai műveletet a négy alapművelet közül (+, -, *, /).
+
+A felhasználó választása a `muvelet` változóban tárolódik el. A program ellenőrzi, hogy a beolvasott `muvelet` nem üres. Ha üres, akkor a ciklusból való kilépés, és ezzel az alkalmazás leáll.
+
+Ezután a program bekéri a felhasználótól az első operandust (`szam1`), majd megakadályozza a nullával való osztást, amennyiben a felhasználó nullát adott meg. Ugyanezt a folyamatot alkalmazza a második operandusra (`szam2`) is.
+
+Miután a program rendelkezik mindkét érvényes operandussal, elvégzi a kiválasztott matematikai műveletet, és kiírja az eredményt a konzolra. Például, ha a felhasználó összeadást választotta, az eredményt így jeleníti meg: "szam1 + szam2 = eredmeny".
+
+A ciklus végül a programot folyamatosan futtatja, így a felhasználó bármikor újabb műveleteket végezhet anélkül, hogy kilépne és újraindítaná az alkalmazást.
+
+A program a konzolon vár egy gombnyomásra (`Console.ReadKey()`), mielőtt leállna. Ez megakadályozza, hogy az alkalmazás azonnal bezáródjon, így a felhasználó láthatja az utolsó eredményt és kényelmesen leállíthatja az alkalmazást.
