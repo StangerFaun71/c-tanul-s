@@ -11,6 +11,9 @@ namespace Számológép
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Nyomjd meg bármeik gombot a továbbjutáshoz...");
+            Console.ReadKey();
+            Console.Clear();
             Console.WriteLine("Számológép");
             while (true)
             {
@@ -24,16 +27,8 @@ namespace Számológép
                 }
                 Console.WriteLine("Adja meg az első számot:");
                 szam1 = int.Parse(Console.ReadLine());
-                while (szam1==0)
-                {
-                    Console.WriteLine("Adja meg az első számot:");
-                    szam1 = int.Parse(Console.ReadLine());
-                }
-                while (szam2 == 0)
-                {
-                        Console.WriteLine("Adja meg a második számot:");
-                        szam2 = int.Parse(Console.ReadLine());
-                }
+                Console.WriteLine("Adja meg a második számot:");
+                szam2 = int.Parse(Console.ReadLine());
 
                 if (muvelet=="+")
                 {
@@ -49,7 +44,14 @@ namespace Számológép
                 }
                 else if (muvelet == "/")
                 {
-                    Console.WriteLine($"{szam1} / {szam2} = {szam1 / szam2} a maradék {szam1 % szam2}");
+                    if (szam2 == 0)
+                    {
+                        Console.WriteLine("nem lehet nulla ");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{szam1} / {szam2} = {szam1 / szam2} a maradék {szam1 % szam2}");
+                    }
                 }
             }
             
