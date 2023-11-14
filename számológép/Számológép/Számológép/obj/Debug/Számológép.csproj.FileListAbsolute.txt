@@ -1,0 +1,7 @@
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\obj\Debug\Számológép.csproj.AssemblyReference.cache
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\obj\Debug\Számológép.csproj.CoreCompileInputs.cache
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\bin\Debug\Számológép.exe.config
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\bin\Debug\Számológép.exe
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\bin\Debug\Számológép.pdb
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\obj\Debug\Számológép.exe
+C:\Users\T1\Documents\Visual Studio 2019\Projects\Számológép\Számológép\obj\Debug\Számológép.pdb
